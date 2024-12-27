@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 dark:bg-primary text-primary dark:text-white;
+  }
+}
+
+@layer components {
+  .metric-card {
+    @apply bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg transition-transform duration-300 hover:scale-102;
+  }
+
+  .chart-container {
+    @apply bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
